@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Welcome to my webpage!
+title: 欢迎来到我的博客
 ---
-Here will display the latest posts.
+这里会展示最新文章列表。
