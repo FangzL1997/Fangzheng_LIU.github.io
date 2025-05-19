@@ -3,13 +3,13 @@ title: "Hello World"
 categories: [随笔]
 tags: [第一次发文, GitHub Pages]
 ---
-# 第一篇文章
+# Volunteer Experience
 
-🎓 2025 Winter Open House
+### 🎓 2025 Winter Semester Open House
 **Organization**: Concordia University  
 **Date**: February 15, 2025  
 **Location**: Concordia University, Montreal  
-**⏱️ Time**: —  
+**⏱️ Time**: 9💯—  
 **🧩 Role**: Assisted with event registration and campus tours *(待确认)*  
 **📞 Contact**: Mariel Ouellette — mariel.ouellette@concordia.ca  
 
