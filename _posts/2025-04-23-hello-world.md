@@ -5,39 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>志愿者经历 - 张三</title>
     <style>
-        .timeline {
-    position: relative;
-    padding-left: 30px;
-    margin: 2rem 0;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background: #3498db;
-}
-
-.activity-card {
-    position: relative;
-    margin-left: 20px;
-}
-
-.activity-card::before {
-    content: "";
-    position: absolute;
-    left: -30px;
-    top: 20px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #3498db;
-    border: 2px solid white;
-}
-        /* 基础样式 */
         * {
             margin: 0;
             padding: 0;
@@ -47,17 +14,29 @@
 
         body {
             background-color: #f5f7fa;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #333;
             padding: 2rem 1rem;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 960px;
             margin: 0 auto;
         }
 
-        /* 标题样式 */
+        .intro-banner {
+            background:#3498db;
+            color:white;
+            padding:2rem;
+            border-radius:12px;
+            text-align:center;
+            margin-bottom:2rem;
+        }
+
+        .intro-banner h2 {
+            font-size: 2rem;
+        }
+
         .page-title {
             text-align: center;
             color: #2c3e50;
@@ -66,61 +45,38 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
-        /* 活动卡片 */
         .activity-card {
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            padding: 2rem;
+            padding: 1.5rem;
             margin-bottom: 2rem;
             transition: transform 0.2s;
         }
 
-        .activity-card:hover {
-            transform: translateY(-3px);
+        .activity-card:nth-child(even) {
+            background-color: #f0f4f8;
         }
 
-        /* 信息区块样式 */
-        .info-section {
-            margin-bottom: 1.5rem;
+        details {
+            margin-top: 1rem;
         }
 
-        .section-title {
-            color: #3498db;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
+        summary {
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
         }
 
-        /* 细节列表 */
         .detail-list {
             list-style: none;
             padding-left: 1rem;
         }
 
         .detail-list li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.2rem;
-            position: relative;
+            margin-bottom: 0.5rem;
         }
 
-        .detail-list li::before {
-            content: "•";
-            color: #3498db;
-            position: absolute;
-            left: 0;
-        }
-
-        /* 证明人区块 */
-        .reference-contact {
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        /* 按钮样式 */
         .proof-btn {
             display: inline-block;
             background: #3498db;
@@ -129,75 +85,91 @@
             border-radius: 6px;
             text-decoration: none;
             margin-top: 1rem;
-            transition: background 0.3s;
-        }
-
-        .proof-btn:hover {
-            background: #2980b9;
-        }
-
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            .activity-card {
-                padding: 1.5rem;
-            }
-            
-            .page-title {
-                font-size: 2rem;
-            }
+            margin-right: 0.5rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="page-title">志愿者经历记录</h1>
-        
-        <!-- 活动1 -->
-        <div class="activity-card">
-            <div class="info-section">
-                <h2 class="section-title">自闭症儿童画展筹款活动</h2>
-                <ul class="detail-list">
-                    <li><strong>日期：</strong>2023年9月10日</li>
-                    <li><strong>主办方：</strong>星空公益基金会</li>
-                    <li><strong>担任角色：</strong>活动执行组长</li>
-                </ul>
-            </div>
-
-            <div class="info-section">
-                <h3 class="section-title">主要成果</h3>
-                <ul class="detail-list">
-                    <li>策划执行3场社区展览</li>
-                    <li>募集善款12,000元</li>
-                    <li>服务参与家庭20组</li>
-                </ul>
-            </div>
-
-            <div class="info-section">
-                <h3 class="section-title">能力提升</h3>
-                <ul class="detail-list">
-                    <li>活动策划与执行</li>
-                    <li>跨部门协调沟通</li>
-                    <li>紧急情况处理</li>
-                </ul>
-            </div>
-
-            <div class="reference-contact">
-                <h3 class="section-title">证明人信息</h3>
-                <ul class="detail-list">
-                    <li><strong>姓名：</strong>李华</li>
-                    <li><strong>职位：</strong>项目经理</li>
-                    <li><strong>联系：</strong>lihua@xingkong.org</li>
-                </ul>
-            </div>
-
-            <a href="#" class="proof-btn">查看活动照片</a>
-            <a href="#" class="proof-btn">媒体报道链接</a>
+        <div class="intro-banner">
+            <h2>👋 嗨，我是张三</h2>
+            <p>欢迎查看我在2025年参与的志愿活动记录。每一次参与都让我成长，也让我更接近心中的理想社会。🌱</p>
         </div>
 
-        <!-- 活动2 -->
+        <h1 class="page-title">📋 志愿者经历记录</h1>
+
         <div class="activity-card">
-            <!-- 结构同上，复制修改内容即可 -->
+            <summary>🏫 Concordia Winter Open House (Feb 15, 2025)</summary>
+            <details>
+                <ul class="detail-list">
+                    <li><strong>地点：</strong> Concordia University</li>
+                    <li><strong>工作内容：</strong> 为未来学生指引方向、回答问题、协助活动流程。</li>
+                    <li><strong>时长：</strong> 半天</li>
+                    <li><strong>联系人：</strong> Mariel Ouellette - mariel.ouellette@concordia.ca</li>
+                </ul>
+            </details>
         </div>
+
+        <div class="activity-card">
+            <summary>💍 The 10 Year Anniversary of The Montreal Shaadi Show (Apr 12–13, 2025)</summary>
+            <details>
+                <ul class="detail-list">
+                    <li><strong>地点：</strong> Plaza Volare, Saint-Laurent, QC</li>
+                    <li><strong>工作内容：</strong> 协助场地布置、迎宾引导、供应商协调等。</li>
+                    <li><strong>时长：</strong> 2整天</li>
+                    <li><strong>联系人：</strong> Genius Rofiq - genius975@hotmail.com</li>
+                </ul>
+            </details>
+        </div>
+
+        <div class="activity-card">
+            <summary>🌸 Marché du printemps au Locoshop Angus (Apr 27, 2025)</summary>
+            <details>
+                <ul class="detail-list">
+                    <li><strong>地点：</strong> 4200 André-Laurendeau, Montreal</li>
+                    <li><strong>工作内容：</strong> 市集协调、摊位支援、志愿者签到。</li>
+                    <li><strong>时长：</strong> 9:00 - 17:00（共8小时）</li>
+                    <li><strong>联系人：</strong> Greg Webb</li>
+                </ul>
+            </details>
+        </div>
+
+        <div class="activity-card">
+            <summary>🚣 CKC National Team Trials #1 - 安全艇观察员 (May 2025)</summary>
+            <details>
+                <ul class="detail-list">
+                    <li><strong>地点：</strong> Olympic Basin, Parc Jean-Drapeau</li>
+                    <li><strong>工作内容：</strong> 在安全艇上观察水面运动情况、报告异常状况。</li>
+                    <li><strong>时长：</strong> 一天</li>
+                    <li><strong>联系人：</strong> Kenna Robins - krobins@canoekayak.ca</li>
+                </ul>
+            </details>
+        </div>
+
+        <div class="activity-card">
+            <summary>🚶 Walk So Kids Can Talk - Kids Help Phone (May 4, 2025)</summary>
+            <details>
+                <ul class="detail-list">
+                    <li><strong>地点：</strong> Angrignon Park, Montreal</li>
+                    <li><strong>工作内容：</strong> 注册支持、捐款处理、现场支援与人流指引。</li>
+                    <li><strong>时长：</strong> 8:00 - 13:00（5小时）</li>
+                    <li><strong>联系人：</strong> Allison Fitzgerald - allison.fitzgerald@kidshelpphone.ca</li>
+                </ul>
+            </details>
+        </div>
+
+        <div class="activity-card">
+            <summary>🍁 March Community Meal - Cabane à sucre (Mar 18, 2025)</summary>
+            <details>
+                <ul class="detail-list">
+                    <li><strong>地点：</strong> McGill University Campus</li>
+                    <li><strong>工作内容：</strong> 协助准备食材、分发食物、与来宾互动。</li>
+                    <li><strong>时长：</strong> 14:00 - 18:00（4小时）</li>
+                    <li><strong>组织：</strong> McGill MfSC</li>
+                </ul>
+            </details>
+        </div>
+
     </div>
 </body>
 </html>
