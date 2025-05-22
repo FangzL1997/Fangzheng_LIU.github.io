@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>志愿者经历 - 张三</title>
     <style>
+        .timeline {
+    position: relative;
+    padding-left: 30px;
+    margin: 2rem 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #3498db;
+}
+
+.activity-card {
+    position: relative;
+    margin-left: 20px;
+}
+
+.activity-card::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #3498db;
+    border: 2px solid white;
+}
         /* 基础样式 */
         * {
             margin: 0;
