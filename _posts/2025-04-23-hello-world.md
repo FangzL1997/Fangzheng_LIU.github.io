@@ -1,9 +1,3 @@
----
-title: "Hello World"
-categories: [随笔]
-tags: [第一次发文, GitHub Pages]
----
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
