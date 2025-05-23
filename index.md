@@ -4,7 +4,6 @@ title: Welcome to my homepage!
 ---
 
 <div style="text-align: center; margin-bottom: 2rem;">
-  <img src="https://avatars.githubusercontent.com/u/FangzL1997" alt="头像" width="100" style="border-radius: 50%;">
   <h2>Hi，I am Fangzheng LIU 👋</h2>
   <p>This is my online resume</p>
 
@@ -12,5 +11,3 @@ title: Welcome to my homepage!
 </div>
 
 ---
-
-# 📚 Section
